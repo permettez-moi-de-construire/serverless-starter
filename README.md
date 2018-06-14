@@ -23,4 +23,4 @@ You need a `.env` file with those two variable set :
 
 ## Credits
 
-Inspirted by repository from [AnomalyInnovations](https://github.com/AnomalyInnovations/serverless-nodejs-starter)
+Forked from [AnomalyInnovations](https://github.com/AnomalyInnovations/serverless-nodejs-starter)
