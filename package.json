@@ -1,0 +1,43 @@
+{
+  "name": "serverless-starter",
+  "version": "1.0.0",
+  "description": "A Node.js starter for the Serverless Framework with async/await and unit test support",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "deploy": "env-cmd .env check-env AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY && env-cmd .env serverless deploy",
+    "offline_server": "serverless offline start",
+    "offline_invoke": "serverless invoke local --function main"
+  },
+  "author": "Loïc PIREZ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/permettez-moi-de-construire/serverless-starter.git"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-source-map-support": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest": "^21.2.1",
+    "serverless-offline": "^3.20.3",
+    "serverless-webpack": "^5.1.0",
+    "webpack": "^4.2.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "check-env": "^1.3.0",
+    "eslint": "^4.19.1",
+    "serverless": "^1.27.3",
+    "source-map-support": "^0.4.18"
+  }
+}
