@@ -14,7 +14,7 @@ provider:
   runtime: nodejs6.10
   stage: dev
   region: eu-west-3
-  environment: ${file(env.yml):${self:provider.stage}}
+  environment: env.yml:${self:provider.stage}}
 
 functions:
   main:
