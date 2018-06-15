@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "jest",
-    "deploy": "env-cmd .env check-env AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY && env-cmd .env serverless deploy",
+    "dev_deploy": "env-cmd .env check-env AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY && env-cmd .env serverless --stage=development deploy",
+    "prod_deploy": "env-cmd .env check-env AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY && env-cmd .env serverless --stage=production deploy",
     "offline_server": "serverless offline start",
     "offline_invoke": "serverless invoke local --function main"
   },
